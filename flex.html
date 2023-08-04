@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Flex</title>
+</head>
+<style>
+    .container {
+        border: 1px dashed;
+        height: 800px;
+        /* Horizontally Align */
+        display: flex;
+        justify-content: center;
+        /*center, flex-start, flex-end, space-around, space-between, space-evenly */
+
+
+        /* Vertically Align */
+        align-items: center;
+        /*center, flex-start, flex-end, stretch */
+        flex-direction: column;
+        /*column, column-reverse, row, row-reverse */
+        flex-wrap: wrap;
+        /* wrap, nowrap. NB: it will works for multiple divs*/
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        border: 1px dashed;
+        background-color: lightcoral;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div id="box4" class="box">box-4</div>
+    </div>
+</body>
+
+</html>
